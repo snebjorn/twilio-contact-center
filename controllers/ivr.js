@@ -9,7 +9,7 @@ module.exports.welcome = function (req, res) {
 		numDigits: 1,
 		timeout: 10
 	}, function (node) {
-		node.say(req.configuration.ivr.text)
+		node.say(req.configuration.ivr.text, {voice: "alice", language: "da-DK", loop: 1})
 	})
 
 	res.setHeader('Content-Type', 'application/xml')
@@ -44,7 +44,7 @@ module.exports.selectTeam = function (req, res) {
 			numDigits: 1,
 			timeout: 5
 		}, function (node) {
-			node.say('Press any key if you want a callback, if you want to talk to an agent please wait in the line')
+			node.say('Tryk på en tast, hvis du ønsker et tilbagekald, hvis du ønsker at tale med en agent skal du vente i linje', {voice: "alice", language: "da-DK", loop: 1})
 		})
 
 		/* create task attributes */
@@ -100,7 +100,7 @@ module.exports.createTask = function (req, res) {
 			console.log(err)
 			twiml.say('An application error occured, the demo ends now')
 		}  else {
-			twiml.say('Thanks for your callback request, an agent will call you back a soon as possible')
+			twiml.say('Tak for din anmodning om tilbagekald, vil en agent ringe tilbage til dig en hurtigst muligt', {voice: "alice", language: "da-DK", loop: 1})
 			twiml.hangup()
 		}
 

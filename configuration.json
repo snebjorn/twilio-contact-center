@@ -1,6 +1,6 @@
 {
 	"ivr": {
-		"text": "Welcome to my call center, please press 1 for sales, press 2 for support",
+		"text": "Velkommen til min callcenter, tryk 1 for salg, tryk 2 for support",
 		"options": [
 			{
 				"friendlyName": "Sales",

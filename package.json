@@ -33,7 +33,7 @@
     "twilio": "^2.9.0"
   },
   "devDependencies": {
-    "eslint": "^2.11.1"
+    "eslint": "^5.16.0"
   },
   "engines": {
     "node": "~4.4.5"

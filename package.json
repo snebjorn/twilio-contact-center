@@ -24,7 +24,7 @@
     "contact centre"
   ],
   "dependencies": {
-    "async": "^1.5.2",
+    "async": "^3.1.0",
     "body-parser": "^1.15.1",
     "compression": "^1.6.2",
     "express": "^4.13.4",
